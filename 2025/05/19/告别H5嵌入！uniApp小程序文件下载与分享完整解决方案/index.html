@@ -9,7 +9,7 @@
     
     <title>
         
-            告别H5嵌入！uniApp小程序文件下载与分享完整解决方案 |
+            uniApp小程序文件下载与分享 |
         
         毛毛的落脚地
     </title>
@@ -35,7 +35,7 @@
     <script class="keep-theme-configurations">
     const KEEP = window.KEEP || {}
     KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en"}
-    KEEP.theme_config = {"base_info":{"primary_color":"#0066cc","title":"毛毛的落脚地","author":"王毛毛","avatar":"/images/avatar.svg","logo":"/images/logo.svg","favicon":"/images/logo.svg"},"menu":{"home":"/","archives":"/archives"},"first_screen":{"enable":true,"background_img":"/images/bg.svg","background_img_dark":"/images/bg.svg","description":"人生海海 不过尔尔","hitokoto":false},"social_contact":{"enable":false,"links":{"github":null,"weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":null}},"scroll":{"progress_bar":false,"percent":false,"hide_header":true},"home":{"announcement":null,"category":false,"tag":false,"post_datetime":"updated"},"post":{"author_badge":{"enable":true,"level_badge":true,"custom_badge":["One","Two","Three"],"text":"创造&解决"},"word_count":{"wordcount":false,"min2read":false},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false,"share":false,"reward":{"enable":false,"img_link":null,"text":null,"icon":null}},"code_block":{"tools":{"enable":true,"style":"mac","highlight_theme":"default"},"highlight_theme":"default"},"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":false,"preload":false},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.39"},"waline":{"server_url":null,"reaction":false,"version":"3.3.2"},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":false},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":false},"footer":{"since":2020,"word_count":false,"site_deploy":{"enable":false,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":false,"css":[null],"js":[null]},"root":"","source_data":{},"version":"4.2.5"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#0066cc","title":"毛毛的落脚地","author":"王毛毛","avatar":"/images/avatar.svg","logo":"/images/logo.svg","favicon":"/images/logo.svg"},"menu":{"home":"/","archives":"/archives","Home":"/","Tags":"/tags","Categories":"/categories"},"first_screen":{"enable":true,"background_img":"/images/bg.svg","background_img_dark":"/images/bg.svg","description":"人生海海 不过尔尔","hitokoto":false},"social_contact":{"enable":false,"links":{"github":null,"weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":null}},"scroll":{"progress_bar":false,"percent":false,"hide_header":true},"home":{"announcement":null,"category":true,"tag":true,"post_datetime":"created","post_datetime_format":"ago"},"post":{"author_badge":{"enable":true,"level_badge":true,"custom_badge":["One","Two","Three"],"text":"创造&解决"},"word_count":{"wordcount":false,"min2read":false},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false,"share":false,"reward":{"enable":false,"img_link":null,"text":null,"icon":null}},"code_block":{"tools":{"enable":true,"style":"mac","highlight_theme":"default"},"highlight_theme":"default"},"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":false,"preload":false},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.39"},"waline":{"server_url":null,"reaction":false,"version":"3.3.2"},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":false},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":false},"footer":{"since":2020,"word_count":false,"site_deploy":{"enable":false,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":false,"css":[null],"js":[null]},"root":"","source_data":{},"version":"4.2.5"}
     KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"}
     KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"}
     KEEP.language_copy_copyright = {"copy":"Copy copyright info","copied":"Copied","title":"Original post title","author":"Original post author","link":"Original post link"}
@@ -98,6 +98,26 @@
                             
                         </li>
                     
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/tags">
+                                
+                                TAGS
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/categories">
+                                
+                                CATEGORIES
+                                
+                            </a>
+                            
+                        </li>
+                    
                     
                 </ul>
             </div>
@@ -137,6 +157,30 @@
                     
                 </li>
             
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tags">
+                            
+                            TAGS
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/categories">
+                            
+                            CATEGORIES
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
         </ul>
     </div>
 
@@ -161,7 +205,7 @@
             <div class="post-content-bottom border-box">
                 
                     <div class="post-title">
-                        告别H5嵌入！uniApp小程序文件下载与分享完整解决方案
+                        uniApp小程序文件下载与分享
                     </div>
                 
 
@@ -189,19 +233,37 @@
         
             <span class="meta-info-item post-create-date">
                 <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
-                <span class="datetime">2025-05-19 14:51:10</span>
+                <span class="datetime">2025-05-19 00:00:00</span>
             </span>
 
             
                 <span class="meta-info-item post-update-date">
                     <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                    <span class="datetime" data-updated="Mon May 19 2025 14:51:10 GMT+0800">2025-05-19 14:51:10</span>
+                    <span class="datetime" data-updated="Mon May 19 2025 15:33:03 GMT+0800">2025-05-19 15:33:03</span>
                 </span>
             
         
 
         
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/%E4%BC%98%E5%8C%96%E4%B8%8E%E9%87%8D%E6%9E%84/">优化与重构</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
 
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/uniapp/">uniapp</a></li>
+                        
+                    
+                </ul>
+            </span>
         
 
         
@@ -226,7 +288,36 @@
                     
 
                     
-                         
+                         <h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>小程序作为轻量化应用载体，在文件处理能力上存在一定局限性。传统的 PDF、CSV 文件下载普遍采用 H5 页面嵌入实现，导致用户体验割裂、开发流程复杂、维护成本高。本文将介绍如何利用 uniapp 和微信小程序原生 API，打造流畅高效的文件下载与预览功能，显著提升用户体验。</p>
+<p><img   src="https://raw.githubusercontent.com/maomaowhy/photoGallery/main/image.png" ></p>
+<h2 id="uniapp-小程序文件下载"><a href="#uniapp-小程序文件下载" class="headerlink" title="uniapp 小程序文件下载"></a>uniapp 小程序文件下载</h2><h2 id="代码详解：一步步理解实现原理"><a href="#代码详解：一步步理解实现原理" class="headerlink" title="代码详解：一步步理解实现原理"></a>代码详解：一步步理解实现原理</h2><h3 id="1-跨平台文件下载设计"><a href="#1-跨平台文件下载设计" class="headerlink" title="1. 跨平台文件下载设计"></a>1. 跨平台文件下载设计</h3><p>代码采用了 uniApp 提供的条件编译功能，通过 #ifdef 和 #endif 指令实现了在不同平台（APP、H5、小程序）下的差异化处理，确保代码在各端均可正常运行。核心思路是：</p>
+<ul>
+<li>先通过 uni.downloadFile() 将文件下载到本地临时路径</li>
+<li>根据当前运行环境，选择合适的方式处理文件</li>
+</ul>
+<h3 id="2-小程序文件处理流程"><a href="#2-小程序文件处理流程" class="headerlink" title="2. 小程序文件处理流程"></a>2. 小程序文件处理流程</h3><p>在小程序环境中，代码主要完成了以下工作：</p>
+<ul>
+<li><strong>文件预览</strong>：调用 uni.openDocument() API 打开系统级预览界面，支持 PDF、DOCX、XLSX 等多种格式</li>
+<li><strong>分享功能</strong>：通过 wx.shareFileMessage() 实现文件的社交分享，提升交互体验</li>
+<li><strong>进度反馈</strong>：使用 downloadTask.onProgressUpdate() 实时显示下载进度，增强用户体验</li>
+</ul>
+<h3 id="3-性能优化与错误处理"><a href="#3-性能优化与错误处理" class="headerlink" title="3. 性能优化与错误处理"></a>3. 性能优化与错误处理</h3><p>代码中包含了完整的错误处理机制：</p>
+<ul>
+<li>网络请求失败反馈</li>
+<li>文件打开异常处理</li>
+<li>分享操作结果提示</li>
+</ul>
+<p>每个环节都配有相应的 Toast 提示，确保用户获得清晰的操作反馈。</p>
+<h3 id="4-跨端适配要点"><a href="#4-跨端适配要点" class="headerlink" title="4. 跨端适配要点"></a>4. 跨端适配要点</h3><ul>
+<li><strong>APP 端</strong>：文件保存至本地文件系统</li>
+<li><strong>H5 端</strong>：通过创建虚拟链接实现下载</li>
+<li><strong>小程序端</strong>：利用系统文档预览能力和平台特有的分享 API</li>
+</ul>
+<h2 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">doDownload</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">  <span class="comment">// 显示下载中的提示</span></span><br><span class="line">  uni.<span class="title function_">showLoading</span>(&#123;</span><br><span class="line">    <span class="attr">title</span>: <span class="string">&#x27;文件下载中...&#x27;</span>,</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> downloadTask = uni.<span class="title function_">downloadFile</span>(&#123;</span><br><span class="line">    <span class="comment">/* 预览pdf */</span></span><br><span class="line">    <span class="comment">// url: &#x27;[文件地址]‘,</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">/* 下载csv */</span></span><br><span class="line">    <span class="comment">// url: &#x27;[文件地址]&#x27;,</span></span><br><span class="line">    <span class="comment">/* 下载pdf */</span></span><br><span class="line">    <span class="attr">url</span>: <span class="string">&#x27;[文件地址]&#x27;</span>,</span><br><span class="line">    <span class="attr">success</span>: <span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;下载完成&#x27;</span>, res);</span><br><span class="line">      <span class="keyword">if</span> (res.<span class="property">statusCode</span> === <span class="number">200</span>) &#123;</span><br><span class="line">        <span class="keyword">const</span> tempFilePath = res.<span class="property">tempFilePath</span>;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 根据平台执行不同的操作</span></span><br><span class="line">        <span class="comment">// #ifdef APP-PLUS</span></span><br><span class="line">        <span class="comment">// APP环境下，保存到相册或文件管理器</span></span><br><span class="line">        uni.<span class="title function_">saveFile</span>(&#123;</span><br><span class="line">          <span class="attr">tempFilePath</span>: tempFilePath,</span><br><span class="line">          <span class="attr">success</span>: <span class="function">(<span class="params">saveRes</span>) =&gt;</span> &#123;</span><br><span class="line">            uni.<span class="title function_">hideLoading</span>();</span><br><span class="line">            uni.<span class="title function_">showToast</span>(&#123;</span><br><span class="line">              <span class="attr">title</span>: <span class="string">&#x27;文件已保存: &#x27;</span> + saveRes.<span class="property">savedFilePath</span>,</span><br><span class="line">              <span class="attr">icon</span>: <span class="string">&#x27;success&#x27;</span>,</span><br><span class="line">              <span class="attr">duration</span>: <span class="number">3000</span>,</span><br><span class="line">            &#125;);</span><br><span class="line">          &#125;,</span><br><span class="line">          <span class="attr">fail</span>: <span class="function">(<span class="params">err</span>) =&gt;</span> &#123;</span><br><span class="line">            <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">&#x27;保存文件失败&#x27;</span>, err);</span><br><span class="line">            uni.<span class="title function_">hideLoading</span>();</span><br><span class="line">            uni.<span class="title function_">showToast</span>(&#123; <span class="attr">title</span>: <span class="string">&#x27;保存文件失败&#x27;</span>, <span class="attr">icon</span>: <span class="string">&#x27;none&#x27;</span> &#125;);</span><br><span class="line">          &#125;,</span><br><span class="line">        &#125;);</span><br><span class="line">        <span class="comment">// #endif</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// #ifdef H5</span></span><br><span class="line">        <span class="comment">// H5环境下，创建下载链接</span></span><br><span class="line">        <span class="keyword">const</span> a = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;a&#x27;</span>);</span><br><span class="line">        a.<span class="property">href</span> = tempFilePath;</span><br><span class="line">        a.<span class="property">download</span> = <span class="string">&#x27;下载文件.csv&#x27;</span>;</span><br><span class="line">        <span class="variable language_">document</span>.<span class="property">body</span>.<span class="title function_">appendChild</span>(a);</span><br><span class="line">        a.<span class="title function_">click</span>();</span><br><span class="line">        <span class="variable language_">document</span>.<span class="property">body</span>.<span class="title function_">removeChild</span>(a);</span><br><span class="line">        uni.<span class="title function_">hideLoading</span>();</span><br><span class="line">        uni.<span class="title function_">showToast</span>(&#123; <span class="attr">title</span>: <span class="string">&#x27;下载完成&#x27;</span>, <span class="attr">icon</span>: <span class="string">&#x27;success&#x27;</span> &#125;);</span><br><span class="line">        <span class="comment">// #endif</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// #ifdef MP-WEIXIN || MP-ALIPAY || MP-BAIDU || MP-TOUTIAO || MP-QQ || MP-KUAISHOU</span></span><br><span class="line">        <span class="comment">// 小程序环境，提供预览功能</span></span><br><span class="line">        uni.<span class="title function_">openDocument</span>(&#123;</span><br><span class="line">          <span class="attr">filePath</span>: tempFilePath,</span><br><span class="line">          <span class="attr">fileType</span>: <span class="string">&#x27;csv&#x27;</span>,</span><br><span class="line">          <span class="attr">success</span>: <span class="function">() =&gt;</span> &#123;</span><br><span class="line">            uni.<span class="title function_">hideLoading</span>();</span><br><span class="line">            uni.<span class="title function_">showActionSheet</span>(&#123;</span><br><span class="line">              <span class="attr">itemList</span>: [<span class="string">&#x27;转发给微信好友&#x27;</span>],</span><br><span class="line">              <span class="attr">success</span>: <span class="keyword">function</span> (<span class="params">res</span>) &#123;</span><br><span class="line">                <span class="keyword">if</span> (res.<span class="property">tapIndex</span> === <span class="number">0</span>) &#123;</span><br><span class="line">                  <span class="comment">// 使用微信小程序的分享文件消息接口</span></span><br><span class="line">                  wx.<span class="title function_">shareFileMessage</span>(&#123;</span><br><span class="line">                    <span class="attr">filePath</span>: tempFilePath,</span><br><span class="line">                    <span class="title function_">success</span>(<span class="params"></span>) &#123;</span><br><span class="line">                      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;分享文件消息成功&#x27;</span>);</span><br><span class="line">                    &#125;,</span><br><span class="line">                    <span class="title function_">fail</span>(<span class="params">res</span>) &#123;</span><br><span class="line">                      <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">&#x27;分享文件消息失败&#x27;</span>, res);</span><br><span class="line">                      uni.<span class="title function_">showToast</span>(&#123;</span><br><span class="line">                        <span class="attr">title</span>: <span class="string">&#x27;分享失败&#x27;</span>,</span><br><span class="line">                        <span class="attr">icon</span>: <span class="string">&#x27;none&#x27;</span>,</span><br><span class="line">                      &#125;);</span><br><span class="line">                    &#125;,</span><br><span class="line">                  &#125;);</span><br><span class="line">                &#125;</span><br><span class="line">              &#125;,</span><br><span class="line">            &#125;);</span><br><span class="line">            <span class="comment">// uni.showToast(&#123; title: &#x27;文件已打开&#x27;, icon: &#x27;success&#x27; &#125;);</span></span><br><span class="line">          &#125;,</span><br><span class="line">          <span class="attr">fail</span>: <span class="function">(<span class="params">err</span>) =&gt;</span> &#123;</span><br><span class="line">            <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">&#x27;打开文件失败&#x27;</span>, err);</span><br><span class="line">            uni.<span class="title function_">hideLoading</span>();</span><br><span class="line">            uni.<span class="title function_">showToast</span>(&#123; <span class="attr">title</span>: <span class="string">&#x27;打开文件失败&#x27;</span>, <span class="attr">icon</span>: <span class="string">&#x27;none&#x27;</span> &#125;);</span><br><span class="line">          &#125;,</span><br><span class="line">        &#125;);</span><br><span class="line">        <span class="comment">// #endif</span></span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        uni.<span class="title function_">hideLoading</span>();</span><br><span class="line">        uni.<span class="title function_">showToast</span>(&#123; <span class="attr">title</span>: <span class="string">&#x27;下载失败: &#x27;</span> + res.<span class="property">statusCode</span>, <span class="attr">icon</span>: <span class="string">&#x27;none&#x27;</span> &#125;);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">fail</span>: <span class="function">(<span class="params">err</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">&#x27;下载失败&#x27;</span>, err);</span><br><span class="line">      uni.<span class="title function_">hideLoading</span>();</span><br><span class="line">      uni.<span class="title function_">showToast</span>(&#123; <span class="attr">title</span>: <span class="string">&#x27;下载失败，请检查网络&#x27;</span>, <span class="attr">icon</span>: <span class="string">&#x27;none&#x27;</span> &#125;);</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 添加下载进度监听</span></span><br><span class="line">  downloadTask.<span class="title function_">onProgressUpdate</span>(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;下载进度&#x27;</span>, res.<span class="property">progress</span>);</span><br><span class="line">    <span class="comment">// 可以用进度条展示下载进度</span></span><br><span class="line">    uni.<span class="title function_">showLoading</span>(&#123;</span><br><span class="line">      <span class="attr">title</span>: <span class="string">&#x27;下载中: &#x27;</span> + res.<span class="property">progress</span> + <span class="string">&#x27;%&#x27;</span>,</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="展示"><a href="#展示" class="headerlink" title="展示"></a>展示</h3><h4 id="调用手机系统的预览"><a href="#调用手机系统的预览" class="headerlink" title="调用手机系统的预览"></a>调用手机系统的预览</h4><p><img   src="https://raw.githubusercontent.com/maomaowhy/photoGallery/main/PixPin_2025-05-19_13-58-24.png"  alt="img"></p>
+<h4 id="微信转发给好友"><a href="#微信转发给好友" class="headerlink" title="微信转发给好友"></a>微信转发给好友</h4><p><img   src="https://raw.githubusercontent.com/maomaowhy/photoGallery/main/image%20(1).png" ></p>
+
                     
                 </div>
 
@@ -234,6 +325,14 @@
 
                 <div class="post-bottom-tags-and-share border-box">
                     <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/uniapp/">uniapp</a>
+                                    </li>
+                                
+                            </ul>
                         
                     </div>
                     <div>
@@ -282,7 +381,7 @@
             <div class="pc-post-toc right-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%83%8C%E6%99%AF"><span class="nav-text">背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#uniapp-%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD"><span class="nav-text">uniapp 小程序文件下载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E8%AF%A6%E8%A7%A3%EF%BC%9A%E4%B8%80%E6%AD%A5%E6%AD%A5%E7%90%86%E8%A7%A3%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86"><span class="nav-text">代码详解：一步步理解实现原理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E8%B7%A8%E5%B9%B3%E5%8F%B0%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E8%AE%BE%E8%AE%A1"><span class="nav-text">1. 跨平台文件下载设计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B"><span class="nav-text">2. 小程序文件处理流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B8%8E%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86"><span class="nav-text">3. 性能优化与错误处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E8%B7%A8%E7%AB%AF%E9%80%82%E9%85%8D%E8%A6%81%E7%82%B9"><span class="nav-text">4. 跨端适配要点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%BA%90%E7%A0%81"><span class="nav-text">源码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B1%95%E7%A4%BA"><span class="nav-text">展示</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B0%83%E7%94%A8%E6%89%8B%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%A2%84%E8%A7%88"><span class="nav-text">调用手机系统的预览</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BE%AE%E4%BF%A1%E8%BD%AC%E5%8F%91%E7%BB%99%E5%A5%BD%E5%8F%8B"><span class="nav-text">微信转发给好友</span></a></li></ol></li></ol></li></ol>
     </div>
 </div>
 
@@ -431,7 +530,7 @@
             <div class="tablet-post-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%83%8C%E6%99%AF"><span class="nav-text">背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#uniapp-%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD"><span class="nav-text">uniapp 小程序文件下载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E8%AF%A6%E8%A7%A3%EF%BC%9A%E4%B8%80%E6%AD%A5%E6%AD%A5%E7%90%86%E8%A7%A3%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86"><span class="nav-text">代码详解：一步步理解实现原理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E8%B7%A8%E5%B9%B3%E5%8F%B0%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E8%AE%BE%E8%AE%A1"><span class="nav-text">1. 跨平台文件下载设计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B"><span class="nav-text">2. 小程序文件处理流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B8%8E%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86"><span class="nav-text">3. 性能优化与错误处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E8%B7%A8%E7%AB%AF%E9%80%82%E9%85%8D%E8%A6%81%E7%82%B9"><span class="nav-text">4. 跨端适配要点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%BA%90%E7%A0%81"><span class="nav-text">源码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B1%95%E7%A4%BA"><span class="nav-text">展示</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B0%83%E7%94%A8%E6%89%8B%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%A2%84%E8%A7%88"><span class="nav-text">调用手机系统的预览</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BE%AE%E4%BF%A1%E8%BD%AC%E5%8F%91%E7%BB%99%E5%A5%BD%E5%8F%8B"><span class="nav-text">微信转发给好友</span></a></li></ol></li></ol></li></ol>
     </div>
 </div>
 
